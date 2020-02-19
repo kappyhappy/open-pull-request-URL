@@ -13,16 +13,27 @@ pr
 ```
 
 ## How To Setup
+### copy binary file to $PATH
+Please check your $PATH before setup.
+```
+git clone https://github.com/kappyhappy/open-pull-request-URL.git
+
+cp open-pull-request-URL/pr $PATH
+```
+
+### build and create binary file
 This CLI is created with golang.
-Please check your GOPATH and PATH before setup.
+Please check your $GOPATH and $PATH before setup.
 ```
 cd $GOPATH
 
 git clone https://github.com/kappyhappy/open-pull-request-URL.git
 
-cd open-pull-request-URLopen-pull-request-URLopen-pull-request-URLopen-pull-request-URL
+cd open-pull-request-URL
+
+rm pr
 
 go build .
 
-mv pr $PATH
+cp pr $PATH
 ```
